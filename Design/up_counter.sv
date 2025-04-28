@@ -2,7 +2,7 @@ module up_counter #(parameter N=8)   (
     input logic clk,
     input logic rst_n,
     input logic enable,
-    output logic [N-1:0]count
+    output logic [N-1:0]
     );
 
     always_ff @ (posedge clk or negedge rst_n) begin
